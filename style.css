@@ -1,0 +1,239 @@
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+body{
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    display:flex;
+    /* justify-content:center;
+    align-items: center; */
+    background: url("https://e0.pxfuel.com/wallpapers/426/206/desktop-wallpaper-abstract-texture-lines-textures-color-stripes-strips-spectrum.jpg");
+    /* background: url("https://images.unsplash.com/photo-1563089145-599997674d42?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"); */
+    background-size: cover;
+    height: 550px;
+    width: 300px;
+    background-position: center;
+}
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    flex-direction: column;
+}
+.weather-box{
+    text-align: center;
+}
+
+.weather-box img{
+    width: 30%;
+    margin-top: 10px;
+}
+
+.weather-box .temperature{
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: -16px;
+}
+
+.weather-box .temperature span{
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.weather-box .description{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.data{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.container{
+    width:500px;
+    height : 500px;
+    margin : 200px auto;
+}
+
+
+.select-dropdown,
+.select-dropdown * {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+.select-dropdown {
+  /* position: relative; */
+  background-color: #E6E6E6;
+  border-radius: 4px;
+}
+.select-dropdown select {
+  font-size: 1rem;
+  font-weight: normal;
+  max-width: 100%;
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  appearance: none;
+}
+.select-dropdown select:active, .select-dropdown select:focus {
+  outline: none;
+  box-shadow: none;
+}
+.select-dropdown:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  width: 0;
+  height: 0;
+  /* margin-top: -2px;
+   */
+  border-top: 5px solid #aaa;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+
+.button1
+{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #742f2f;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    text-align:center;
+    transition: all 0.2s;
+}
+.button1:hover
+{
+ color:#000000;
+ background-color:#955dc9;
+}
+@media all and (max-width:30em)
+{
+ a.button1
+ {
+    display:block;
+    margin:0.4em auto; 
+ }
+}
+h2{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 20px;
+}
+#scrap_display{
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.search-box{
+  padding-left: 35px;
+  justify-content: center;
+  align-items: center;
+}
+.search-box1{
+  padding-left: 50px;
+  justify-content: center;
+  align-items: center;
+}
+input{
+  width: 80%;
+  border-radius: 17px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-image: url(https://img.icons8.com/?size=1x&id=131&format=png);
+  background-position: left;
+  border-bottom: 2px solid grey;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+
+input:focus {
+  border: 3px solid yellow;
+}
+
+
+.bn40 {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 10px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+  color: #fff;
+
+}
+
+
+.button2
+{
+    width: 50%;
+    
+    display:inline-block;
+    padding:0.35em 1.2em;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    
+    transition: all 0.2s;
+}
+
+
+.button2:hover
+{
+ color:#000000;
+ background-color:#955dc9;
+}
+@media all and (max-width:30em)
+{
+ a.button2
+ {
+    display:block;
+    margin:0.4em auto; 
+ }
+}

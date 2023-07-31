@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name" : "Multi-tool",
+    "version" :"1.0.0",
+    "icons": {
+        "16": "logo.png",
+        "32": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+      },
+    "description": "A multi purpose productivity tool",
+    "author":"Gurkirat Singh",
+    "action":{
+        "default_popup" : "index.html",
+        "default_title" : "My Crome extention"
+    },
+    "background":{
+        "service_worker": "service-worker.js"
+    },
+    "permissions":[
+        "alarms",
+        "notifications",
+        "offscreen"
+    ]
+}
